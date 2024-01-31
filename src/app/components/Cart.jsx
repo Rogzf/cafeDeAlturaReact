@@ -13,8 +13,10 @@ const Cart = () => {
 
   return (
     <div>
-    
-      <Image onClick={()=>setIsCartShop(!isCartShop)} src={Default} alt="" width={20} height={20} />
+    <div className="w-6">
+
+      <Image onClick={()=>setIsCartShop(!isCartShop)} src={Default} alt="" width={24} height={24} />
+    </div>
       
         
       {isCartShop && (

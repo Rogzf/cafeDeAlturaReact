@@ -5,7 +5,8 @@ import PhoneGrey from "./assets/PhoneGrey.png";
 import Mail from "./assets/Mail.png"
 const EntraEnContacto = () => {
   return (
-    <div className="flex bg-[#E3DED7] justify-center items-center gap-6 w-full">
+    <div className="flex bg-[#E3DED7] justify-around">
+    <div className="flex  justify-center items-center gap-6 w-[588px]">
       <div className="flex flex-col w-[588px] gap-8 justify-center">
         <div className="flex flex-col gap-3">
           <h3 className="text-[#111827)] text-[18px] font-semibold leading-6">
@@ -55,6 +56,7 @@ const EntraEnContacto = () => {
           </p>
         </div>
       </div>
+    </div>
       <Forms />
     </div>
   );

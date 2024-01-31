@@ -5,7 +5,7 @@ import FormPagoYEnvio from '../components/FormPagoYEnvio'
 
 const Checkout = () => {
   return (
-    <div className='mt-24'>
+    <div className='mt-[65px] p-10'>
         <FormPagoYEnvio/>
     </div>
   )

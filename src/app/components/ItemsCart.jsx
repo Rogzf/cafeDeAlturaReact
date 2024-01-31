@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import { ProductsContext } from "../context/ProductsContextProvider";
+import { Minus, Plus } from "lucide-react";
 
 const ItemsCart = () => {
 
@@ -29,14 +30,14 @@ const ItemsCart = () => {
           <div key={elemento.id} className="flex flex-col gap-3 pb-2 w-auto">
             <div className="flex gap-4 justify-between items-center">
               <div className="flex gap-2 items-center">
-                <button onClick={()=>handleAddToCart(elemento)}>+</button>
+                <button onClick={()=>handleAddToCart(elemento)}><Plus/></button>
                 <div className="flex justify-center bg-slate-400 w-5 rounded-xl text-black">
                   {elemento.quantity}
                 </div>
-                <button onClick={()=>handleDecrementQuantity(elemento)}>-</button>
+                <button onClick={()=>handleDecrementQuantity(elemento)}><Minus/></button>
               </div>
 
-              <Image src={elemento.imgCoffee} alt="" width={150} height={150} />
+              <Image src={elemento.imgCoffee} alt="" width={65} height={65} />
               <div className="w-auto">
                 <div className="text-sm font-semibold leading-4">{elemento.name}</div>
                 <p>Paquete de café, 250 gr</p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const pages = () => {
   return (
-    <div>pages tlf cpontaxcto</div>
+    <div className='mt-[65px]'>pages tlf cpontaxcto</div>
   )
 }
 

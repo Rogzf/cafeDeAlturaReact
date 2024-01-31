@@ -2,7 +2,7 @@ import React from 'react'
 
 const companies = () => {
   return (
-    <div>companies</div>
+    <div className='mt-[65px]'>companies</div>
   )
 }
 

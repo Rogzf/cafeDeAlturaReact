@@ -71,10 +71,13 @@ const {cart, cantidadDeProductos} =useContext(ProductsContext)
           </Button>
         </Link>
       </div>
+      <div className="flex gap-2">
+
       <Cart />
       {cart.length>0&&(
-        <div>{cantidadDeProductos}</div>
+        <div className="flex bg-[#3F3E3F] text-xs size-6 rounded-[200px] items-center justify-center">{cantidadDeProductos}</div>
       )}
+      </div>
     </div>
   );
 };

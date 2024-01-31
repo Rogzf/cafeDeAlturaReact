@@ -5,7 +5,7 @@ import CoffeConditionsArray from '../components/CoffeConditionsArray'
 
 const store = () => {
   return (
-    <div>
+    <div className='mt-[65px] p-10'>
       <StoreCoffe/>
       <CoffeConditionsArray/>
       <Footer/>

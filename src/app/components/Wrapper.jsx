@@ -4,8 +4,8 @@ import HeroImg from './assets/Heroimage.png'
 import { Button } from "./Button";
 const Wrapper = () => {
   return (
-    <div className="flex py-10 px-12 items-center gap-6 mt-16">
-      <div className="flex flex-col gap-4">
+    <div className="flex py-10 px-12 items-center gap-6 mt-[80px]">
+      <div className="flex flex-col gap-4 w-[588px]">
         <p className="text-[#2A5B45] text-[18px] font-semibold leading-6	 ">
           De la planta a tu taza
         </p>
@@ -23,7 +23,10 @@ const Wrapper = () => {
         </div>
         
       </div>
-      <HeroImage img={HeroImg}/>
+      <div className="w-[588px] h-[390px]">
+        <HeroImage img={HeroImg}/>
+      </div>
+      
     </div>
   );
 };

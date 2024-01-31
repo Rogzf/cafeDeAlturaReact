@@ -5,15 +5,15 @@ import TotalCart from "./TotalCart";
 
 const FormPagoYEnvio = () => {
   return (
-    <div className="flex flex-col ">
-      <p className="flex justify-center items-center">Checkout</p>
+    <div className="flex flex-col gap-6">
+      <p className="flex justify-center items-center text-2xl leading-7 font-medium text-[#2A5B45]">Checkout</p>
     <div className="flex justify-around">
     <div className="flex flex-col gap-6 w-[792px]">
       <p className="text-lg leading-6 font-semibold">
         Seleccionar método de pago
       </p>
       <div className="flex">
-        <input type="radio" name="tarjetaDeDebito" />
+        <input type="radio" name="pago" />
         <div>
           <label
             type="text"
@@ -96,7 +96,7 @@ const FormPagoYEnvio = () => {
       <div className="bg-black h-1"></div>
 
       <div className="flex gap-4">
-        <input type="radio" name="transferencia" />
+        <input type="radio" name="pago" />
         <article>
           <p className="text-sm leading-4 font-semibold">
             Transferencia bancaria a la cuenta ES12 1234 1234 123457890
@@ -111,7 +111,7 @@ const FormPagoYEnvio = () => {
       <div className="bg-black"></div>
 
       <div className="flex gap-4">
-        <input type="radio" name="bizum" />
+        <input type="radio" name="pago" />
         <article className="flex gap-4 items-center">
           <p className="text-sm leading-4 font-semibold">Bizum</p>
           {/* <Image/> */} tengo q poner aqui la imagen del bizum

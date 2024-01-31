@@ -22,7 +22,7 @@ const Forms = () => {
 
   return (
     <form
-      className={`flex flex-col bg-white gap-6 pt-8 pr-8 pb-8 pl-12`}
+      className={`flex flex-col bg-white w-[588px] gap-6 pt-8 pr-8 pb-8 pl-12`}
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="flex flex-col gap-1">
